@@ -34,8 +34,11 @@
   }
   
   .logo {
+    text-decoration: none;  
     font-size: 1.25rem;
     font-weight: bold;
+    color: white;
+    
   }
   
   .navbar nav ul {
