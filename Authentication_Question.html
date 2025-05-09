@@ -4,45 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OSKA Support - Authentication Question</title>
+    <link rel="stylesheet" href="assets/fontawesome/css/all.css"> 
+    <link rel="stylesheet" href="taskandproject.css"/>
     <link rel="stylesheet" href="Authentication_Question_style.css">
 </head>
 <body>
     <div>
         <header class="navbar">
-          <div class="logo">OSKA support</div>
-          <nav>
-            <ul>
-              <li>Categories</li>
-              <li>Bounty</li>
-              <li class="overlay"><a href="taskandproject.html">Task/Project</a></li>
-            </ul>
-          </nav>
-          <div class="search-container">
-            <div class="search-box">
-              <img src="assets/icons/search_strong_icon.png" alt="Search Icon">
-              <input type="text" placeholder="Search..." />
-            </div>
-            <div class="tokens">2,500 Tokens</div>
-            <div class="profile-icon">
-              <img src="img/profile-icon.png" alt="profile-icon">
-            </div>
-          </div>          
-        </header>
+            <div class="logo"><a href="index.html">OSKA support</a></div>
+            <nav>
+              <ul>
+                <li>Categories</li>
+                <li>Bounty</li>
+                <li>Task/Project</li>
+              </ul>
+            </nav>
+            <div class="search-container">
+              <div class="search-box">
+                <i class="fa fa-search"></i>
+                <input type="text" placeholder="Search..." />
+              </div>
+              <div class="tokens">2,500 Tokens</div>
+              <div class="profile-icon">
+                <img src="img/profile-icon.png" alt="profile-icon">
+              </div>
+            </div>    
+          </header>
     </div>
     <main class="container">
         <section class="main-content">
           <div class="question-card">
             <div class="tags"><span>JavaScript</span><span>React</span></div>
             <h1>How to implement authentication in Next.js 13 with App Router?</h1>
-            <p>I'm trying to implement authentication in my Next.js 13 application using the new App Router...</p>
+            <p>I'm trying to implement authentication in my Next.js 13 application using the new App Router.I've tried several approaches but none seem 
+                to work properly.Looking for a detailed solution...
+            </p>
             <div class="question-meta">
               <div class="user-info">
-                <img src="avatar-john.png" alt="John Doe">
-                <span>John Doe</span>
-                <span>Posted on Jan 15, 2025</span>
+                <img src="img/1.png" alt="John Doe">
+               <div><span><b>John Doe </b></span><br><span>Posted on Jan 15, 2025</span></div>
               </div>
-              <div class="bounty-info">
+              <div class="bounty-center">
                 <span>500 Tokens Bounty</span>
+                </div>
+                <div class="bounty-hours">
                 <span>48h Remaining</span>
               </div>
             </div>
@@ -50,8 +55,11 @@
     
           <div class="answers">
             <h2>2 Answers</h2>
+            <hr>
             <div class="answer-card">
-              <div class="vote">↑ 42 ↓</div>
+                <i class="fa fa-angle-up"></i>
+                <h2 class="vote">42</h2>
+                <i class="fa fa-angle-down"></i>
               <div class="answer-content">
                 <div class="user-info">
                   <span>Alice Smith</span>
@@ -68,10 +76,10 @@
           <div class="your-answer">
             <h3>Your Answer</h3>
             <div class="editor-toolbar">
-              <button><b>B</b></button>
-              <button><i>I</i></button>
-              <button>&lt;/&gt;</button>
-              <button>🔗</button>
+              <button><i class="fa fa-bold"></i></button>
+              <button><i class="fa fa-italic"></i></button>
+              <button><i class="fa fa-link"></i></button>
+              <button><i class="fa fa-less-than"></i><i class="fa fa-slash"></i><i class="fa fa-greater-than"></i></button> 
             </div>
             <textarea placeholder="Write your answer here..."></textarea>
           </div>
