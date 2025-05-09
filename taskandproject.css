@@ -4,12 +4,9 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
+    font-size: medium;
   }
   
-  body {
-    background: #f8f9fa;
-    color: #333;
-  }
   .navbar {
     display: flex;
     flex-wrap: wrap;
@@ -21,12 +18,11 @@
    
   }
   
-  .logo {
-    text-decoration: none;  
-    font-size: 1.25rem;
-    font-weight: bold;
+  .logo a {
+    text-decoration: none;   
+    font-size: 1.25rem;          
     color: white;
-    
+    font-weight: bold;
   }
   
   .navbar nav ul {
@@ -65,12 +61,14 @@
   }
   
   .profile-icon img {
-    width: 40px;
-    height: 40px;
+    width: 32px;
+    height: 32px;
     border-radius: 50%;
-    object-fit: cover; 
+    object-fit: cover;
     cursor: pointer;
   }
+  
+  
   
   .main-content {
     display: flex;
