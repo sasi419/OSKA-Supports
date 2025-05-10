@@ -175,7 +175,7 @@
     align-items: center;
   }
   
-  .actions button {
+  .actions a button {
     background: #1d3b91;
     color: white;
     padding: 6px 15px;

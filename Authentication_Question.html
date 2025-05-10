@@ -34,8 +34,16 @@
     <main class="container">
         <section class="main-content">
           <div class="question-card">
-            <div class="tags"><span>JavaScript</span><span>React</span></div>
-            <h1>How to implement authentication in Next.js 13 with App Router?</h1>
+            <div class="tags">
+                <div class="user-info">
+                    <div class="tags"><span>JavaScript</span><span>React</span></div>
+                </div>
+                <div class="bounty-hours">
+                  <span><i class="fa fa-bookmark"></i></span>
+                  <span><i class="fa fa-share"></i></span>
+                </div>
+            </div>
+            <h1 class="Question">How to implement authentication in Next.js 13 with App Router?</h1>  
             <p>I'm trying to implement authentication in my Next.js 13 application using the new App Router.I've tried several approaches but none seem 
                 to work properly.Looking for a detailed solution...
             </p>
@@ -54,20 +62,30 @@
           </div>
     
           <div class="answers">
-            <h2>2 Answers</h2>
+            <h3>2 Answers</h3>
             <hr>
             <div class="answer-card">
-                <i class="fa fa-angle-up"></i>
-                <h2 class="vote">42</h2>
-                <i class="fa fa-angle-down"></i>
+                <div class="vote-section">
+                    <i class="fa fa-angle-up"></i>
+                    <h2 class="vote">42</h2>
+                    <i class="fa fa-angle-down"></i>
+                  </div>
               <div class="answer-content">
                 <div class="user-info">
-                  <span>Alice Smith</span>
-                  <span>Answered Jan 16, 2025</span>
+                    <img src="img/2.png" alt="image1">
+                    <div><span><b>Alice Smith</b></span><br><span>Answered  Jan 16, 2025</span></div>
                 </div>
-                <p>Here's a detailed solution using Next-Auth...</p>
+                <div class="detailed">
+                    <p>Here's a detailed solution using Next-Auth...</p>
+                  </div>
+                  <div class="comments-box">
+                  <p>comments(3)</p>
+                <div class="user-details">
+                    <img src="img/1.png" alt="image comments">
                 <div class="comments">
-                  <p><strong>Bob Wilson:</strong> Thanks, this helped!</p>
+                    <div><span><b>Bob wilson</b></span><br><span>Thanks, this helped!</span></div>
+                </div>
+                </div>
                 </div>
               </div>
             </div>
@@ -82,15 +100,22 @@
               <button><i class="fa fa-less-than"></i><i class="fa fa-slash"></i><i class="fa fa-greater-than"></i></button> 
             </div>
             <textarea placeholder="Write your answer here..."></textarea>
-          </div>
+          
+          <div class="answer-footer">
+            <span class="attachment"><i class="fa fa-paperclip"></i></i>  Add Attachment</span>
+            <button class="submit-btn">Submit Answer</button>
+          </div> 
+        </div>
         </section>
     
         <aside class="sidebar">
           <div class="top-hunters">
             <h3>Top Bounty Hunters</h3>
             <ul>
-              <li>Alice Smith - 2,500 tokens</li>
-              <li>Bob Wilson - 1,800 tokens</li>
+              <li><div class="user-info">
+                <img src="img/2.png" alt="John Doe"><b>Alice Smith</b>  - 2,500 tokens</div></li>
+              <li><div class="user-info">
+                <img src="img/1.png" alt="John Doe"><b>Bob Wilson</b>  - 1,800 tokens</div></li>
             </ul>
           </div>
     
@@ -98,7 +123,9 @@
             <h3>Related Questions</h3>
             <ul>
               <li>Authentication best practices in React</li>
+              <li class="days">5 answers . 2 days ago</li>
               <li>JWT vs Session Authentication</li>
+              <li class="days">3 answers . 1 week ago</li>
             </ul>
           </div>
     

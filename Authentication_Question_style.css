@@ -18,7 +18,6 @@
     background: #1d3b91;
     color: white;
     padding: 15px 20px;
-   
   }
   
   .logo a {
@@ -78,10 +77,13 @@
   .main-content {
     flex: 3;
     margin-right: 2rem;  
+    background-color:#ffffff;
+    border-radius: 10px;
   }
   
   .sidebar {
     flex: 1;   
+    padding-top: 15px;
   }
   
   .question-card,
@@ -91,12 +93,19 @@
   .related-questions,
   .buy-tokens {
     background-color: rgb(255, 254, 254);
-    padding: 1.5rem;
+    padding: 1.0rem;
     border-radius: 8px;
     margin-bottom: 1.5rem;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    
   }
-  
+  .Question{
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .tags-card{
+    display: inline;
+  }
   .tags span {
     background: #e3e8f0;
     color: #1d3f91;
@@ -105,6 +114,17 @@
     margin-right: 6px;
     font-size: 0.9rem;
   }
+  .tags{
+  
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 0.9rem;   
+      
+        padding: 5px;
+        border-radius: 5px;
+  }
+
   
   .question-meta {
     display: flex;
@@ -147,9 +167,10 @@
   hr{
     margin: 10px
   }
-  .answers h2 {
-    margin-bottom: 1rem;
-    padding: 20px;
+  .answers h3 {
+    margin-bottom: 1px;
+    padding-left: 30px;
+    font-size: 20px;
   }
   
   .answer-card {
@@ -157,16 +178,46 @@
     gap: 1rem;
   }
   
+  .vote-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+  }
   .vote {
     font-size: 1.2rem;
     font-weight: bold;
-    padding-top: 0.5rem;
   }
-  
   .answer-content {
     flex: 1;
   }
-  
+  .detailed{
+    margin-top: 0.5rem;
+    padding-left: 1rem;
+    border-left: 2px solid #e0e0e0;
+    font-size: 0.9rem;
+    color: #555;
+
+  }
+  .user-details img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+  }
+  .user-details{
+    align-items: center;
+    gap: 8px;
+    display: flex;
+  }
+  .comments-box{
+    margin-top: 1rem;
+    padding: 2rem;
+    border-left: 2px solid #e0e0e0;
+    font-size: 0.9rem;
+    background-color: aliceblue;
+  }
   .comments {
     margin-top: 0.5rem;
     padding-left: 1rem;
@@ -176,12 +227,14 @@
   }
   .your-answer{
     width: 100%;
+    margin: 1px;
   }
   .editor-toolbar {
     margin: 1rem 0 0.5rem;
     background-color: rgb(202, 200, 200);
     height: 50px;
     padding: 10px;
+
   }
   
   .editor-toolbar button {
@@ -200,6 +253,45 @@
     border-radius: 6px;
     border: 1px solid #ccc;
   }
+  .answer-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+    width: 100%;
+  }
+  
+  .attachment {
+    font-size: 1rem;
+    color: #444;
+    cursor: pointer;
+    margin: 10px;
+    margin-left: 20px;
+    background-color: #ccc;
+    height: 40px;
+    width: 20%;
+    padding-top: 10px;
+    text-align: center;
+    border-radius: 10px;
+    
+
+  }
+  
+  .submit-btn {
+    background-color: #1d3f91;
+    color: #fff;
+    padding: 0.5rem 1.2rem;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-right: 20px;
+  }
+  
+  .submit-btn:hover {
+    background-color: #163471;
+  }
   
   .sidebar h3 {
     margin-bottom: 0.75rem;
@@ -215,6 +307,12 @@
     font-size: 0.95rem;
   }
   
+  .days{
+    margin-top: 0.5rem;
+    
+    font-size: 0.9rem;
+    color: #555;
+  }
   .buy-tokens button {
     margin-top: 1rem;
     background-color: #1d3f91;
@@ -223,4 +321,5 @@
     padding: 0.5rem 1rem;
     border-radius: 6px;
     cursor: pointer;
+    width: 100%;
   }
