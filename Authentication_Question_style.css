@@ -323,3 +323,124 @@
     cursor: pointer;
     width: 100%;
   }
+
+  /* Responsive Design */
+
+/* Tablets and below (<= 1024px) */
+@media (max-width: 1024px) {
+    .container {
+      flex-direction: column;
+      padding: 1rem;
+    }
+  
+    .main-content {
+      margin-right: 0;
+    }
+  
+    .navbar nav ul {
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+  
+    .search-container {
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+  
+    .answer-card {
+      flex-direction: column;
+    }
+  
+    .answer-footer {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1rem;
+    }
+  }
+  
+  /* Mobile and small devices (<= 768px) */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+    }
+  
+    .search-box input {
+      width: 100%;
+    }
+  
+    .container {
+      flex-direction: column;
+    }
+  
+    .answer-card {
+      flex-direction: column;
+    }
+  
+    .vote-section {
+      flex-direction: row;
+      justify-content: flex-start;
+      gap: 10px;
+    }
+  
+    .editor-toolbar {
+      flex-wrap: wrap;
+    }
+  
+    .attachment {
+      width: 100%;
+      text-align: center;
+    }
+  
+    .submit-btn {
+      width: 100%;
+    }
+  
+    .tags {
+      flex-wrap: wrap;
+    }
+  
+    .question-meta {
+      flex-direction: column;
+      align-items: flex-start;
+      height: auto;
+      gap: 0.5rem;
+    }
+  }
+  
+  /* Smallest devices (<= 480px) */
+  @media (max-width: 480px) {
+    .logo a {
+      font-size: 1rem;
+    }
+  
+    .sidebar {
+      padding-top: 0;
+    }
+  
+    .tags span {
+      font-size: 0.8rem;
+    }
+  
+    textarea {
+      height: 100px;
+    }
+  
+    .profile-icon img,
+    .user-info img,
+    .user-details img {
+      width: 30px;
+      height: 30px;
+    }
+  
+    .editor-toolbar button {
+      font-size: 0.8rem;
+      padding: 4px 6px;
+    }
+  
+    .days {
+      font-size: 0.8rem;
+    }
+  }
+  
