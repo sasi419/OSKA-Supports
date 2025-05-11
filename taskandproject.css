@@ -262,63 +262,115 @@
 
   
 
-
-  
-  /* Responsive Styles */
-  @media (max-width: 768px) {
-    .navbar {
-      flex-direction: column;
-      align-items: flex-start;
-    }
-  
-    .navbar nav ul {
-      flex-direction: column;
-      gap: 10px;
-      margin-top: 10px;
-    }
-  
-    .search-bar {
-      flex-direction: column;
-      align-items: flex-start;
-      width: 100%;
-    }
-    .profile-icon img {
-        width: 30px;
-        height: 30px;
-      }
-    .main-content {
-      flex-direction: column;
-    }
-    .welcome-container {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-    
-      .profile-image {
-        width: 50px;
-        height: 50px;
-      }
-    .left-panel, .right-panel {
-      width: 100%;
-    }
-  
-    .question-card {
-      padding: 10px;
-    }
-  
-    .card-tokens {
-      top: 10px;
-      right: 10px;
-      font-size: 0.8rem;
-    }
-    .bounty-entry {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-    
-      .bounty-rank {
-        align-self: flex-end;
-        margin-top: 5px;
-      }
+/* Tablets and smaller desktops */
+@media (max-width: 1024px) {
+  .main-content {
+    flex-direction: column;
   }
-  
+
+  .right-panel {
+    margin: 0;
+  }
+}
+
+/* Mobile & iOS views */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .navbar nav ul {
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 0;
+    width: 100%;
+  }
+
+  .search-container {
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+  }
+
+  .search-box input {
+    width: 100%;
+  }
+
+  .main-content {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .left-panel, .right-panel {
+    flex: 1 1 100%;
+    min-width: 100%;
+  }
+
+  .question-card,
+  .welcome-container,
+  .welcome-box {
+    margin: 10px 0;
+  }
+
+  .meta {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .bounty-entry {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .bounty-name-rank {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+
+  .actions {
+    justify-content: center;
+  }
+
+  .actions a button,
+  .post,
+  .purchase-btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .profile-image {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+/* Small Mobile Devices */
+@media (max-width: 480px) {
+  .logo a {
+    font-size: 1rem;
+  }
+
+  .navbar {
+    padding: 10px;
+  }
+
+  .tags span {
+    font-size: 0.7rem;
+  }
+
+  .card-tokens,
+  .tokens {
+    font-size: 0.75rem;
+  }
+
+  .question-card h3 {
+    font-size: 1rem;
+  }
+
+  .bounty-tokens {
+    font-size: 0.8rem;
+  }
+}
