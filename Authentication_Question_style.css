@@ -96,6 +96,7 @@
     padding: 1.0rem;
     border-radius: 8px;
     margin-bottom: 1.5rem;
+    margin-top: 5px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
     
   }
@@ -124,7 +125,6 @@
         justify-content: space-between;
         align-items: center;
         font-size: 0.9rem;   
-      
         padding: 5px;
         border-radius: 5px;
   }
@@ -154,6 +154,12 @@
     align-items: center;
     gap: 8px;
     display: flex;
+  }
+
+  .best-react{
+    background-color: #fafafa;
+    margin: 5px;
+    padding: 10px;
   }
   
   .bounty-center {
@@ -332,123 +338,126 @@
     width: 100%;
   }
 
-  /* Responsive Design */
-
-/* Tablets and below (<= 1024px) */
-@media (max-width: 1024px) {
+  /* ---------- Mobile (≤ 767px) ---------- */
+@media (max-width: 767px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 10px;
+    }
+  
+    .navbar nav ul {
+      flex-direction: column;
+      gap: 10px;
+      width: 100%;
+    }
+  
+    .search-container {
+      flex-direction: column;
+      align-items: stretch;
+      width: 100%;
+      margin-top: 10px;
+      gap: 10px;
+    }
+  
     .container {
       flex-direction: column;
       padding: 1rem;
     }
   
-    .main-content {
+    .main-content,
+    .sidebar {
+      width: 100%;
       margin-right: 0;
     }
   
-    .navbar nav ul {
-      flex-wrap: wrap;
-      gap: 10px;
-    }
-  
-    .search-container {
-      flex-wrap: wrap;
-      gap: 0.5rem;
-    }
-  
-    .answer-card {
-      flex-direction: column;
+    .question-card,
+    .answer-card,
+    .your-answer {
+      margin: 10px 0;
+      padding: 1rem;
     }
   
     .answer-footer {
       flex-direction: column;
       align-items: flex-start;
-      gap: 1rem;
-    }
-  }
-  
-  /* Mobile and small devices (<= 768px) */
-  @media (max-width: 768px) {
-    .navbar {
-      flex-direction: column;
-      align-items: flex-start;
       gap: 10px;
     }
   
-    .search-box input {
-      width: 100%;
-    }
-  
-    .container {
-      flex-direction: column;
-    }
-  
-    .answer-card {
-      flex-direction: column;
-    }
-  
-    .vote-section {
-      flex-direction: row;
-      justify-content: flex-start;
-      gap: 10px;
-    }
-  
-    .editor-toolbar {
-      flex-wrap: wrap;
-    }
-  
-    .attachment {
-      width: 100%;
-      text-align: center;
-    }
-  
+    .attachment,
     .submit-btn {
       width: 100%;
+      margin-left: 0;
+      margin-right: 0;
     }
   
     .tags {
-      flex-wrap: wrap;
-    }
-  
-    .question-meta {
       flex-direction: column;
       align-items: flex-start;
-      height: auto;
-      gap: 0.5rem;
     }
   }
   
-  /* Smallest devices (<= 480px) */
-  @media (max-width: 480px) {
-    .logo a {
-      font-size: 1rem;
+  /* ---------- Tablet / iOS (768px–1024px) ---------- */
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .container {
+      flex-direction: column;
+      padding: 1.5rem;
+    }
+  
+    .main-content,
+    .sidebar {
+      width: 100%;
+      margin-right: 0;
+    }
+  
+    .navbar {
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  
+    .search-container {
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      width: 100%;
+    }
+  
+    .answer-footer {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+    }
+  
+    .submit-btn,
+    .attachment {
+      width: 100%;
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+  
+  /* ---------- Desktop (≥ 1025px) ---------- */
+  @media (min-width: 1025px) {
+    .container {
+      flex-direction: row;
+    }
+  
+    .main-content {
+      flex: 3;
+      margin-right: 2rem;
     }
   
     .sidebar {
-      padding-top: 0;
+      flex: 1;
     }
   
-    .tags span {
-      font-size: 0.8rem;
+    .search-container {
+      flex-direction: row;
     }
   
-    textarea {
-      height: 100px;
-    }
-  
-    .profile-icon img,
-    .user-info img,
-    .user-details img {
-      width: 30px;
-      height: 30px;
-    }
-  
-    .editor-toolbar button {
-      font-size: 0.8rem;
-      padding: 4px 6px;
-    }
-  
-    .days {
-      font-size: 0.8rem;
+    .answer-footer {
+      flex-direction: row;
+      justify-content: space-between;
     }
   }
   
