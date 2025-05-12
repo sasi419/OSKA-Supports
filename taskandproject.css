@@ -72,9 +72,6 @@
     object-fit: cover;
     cursor: pointer;
   }
-  
-  
-  
   .main-content {
     display: flex;
     gap: 20px;
@@ -143,7 +140,7 @@
     position: absolute;
     top: 15px;
     right: 15px;
-    background: #d8d8da;
+    background: #f5f5f5;
     color: rgb(0, 0, 0);
     padding: 5px 10px;
     border-radius: 4px;
@@ -158,7 +155,7 @@
   
   .tags span {
     display: inline-block;
-    background: #e1e7f5;
+    background: #f5f5f5;
     color: #000000;
     padding: 4px 10px;
     border-radius: 16px;
@@ -200,9 +197,11 @@
   }
   
   .card {
-    background: white;
-    padding: 15px;
+    background-color: #ffffff;
+    padding: 1.0rem;
     border-radius: 8px;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);;
   }
   
   .card h4 {
