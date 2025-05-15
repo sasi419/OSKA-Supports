@@ -165,6 +165,20 @@
     gap: 8px;
     display: flex;
   }
+  .user-infos img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+  }
+  
+  .user-infos{
+    align-items: center;
+    gap: 8px;
+    display: flex;
+    justify-content: space-between;
+  }
 
   .best-react{
     background-color: #fafafa;
@@ -462,4 +476,5 @@
     justify-content: space-between;
     gap: 100px;
   }
+  
 }
