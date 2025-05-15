@@ -59,7 +59,11 @@
     color: rgb(56,56,56);
     background-color: #ffffff;
   }
-  
+  .Mobile-tokens{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
   .tokens {
     font-weight: bold;
     white-space: nowrap;
@@ -146,8 +150,7 @@
   }
   .meta-action{
     display: flex;
-    justify-content: space-between;
-
+    justify-content: space-between;  
   }
   .card-tokens {
     position: absolute;
@@ -177,13 +180,13 @@
     font-size: 0.75rem;
     color: #666;
     margin-top: 20px;
-    gap: 20px;
-   
+  }
+  .meta span{
+    margin: 10px;
   }
   
   .actions {
     display: flex;
-    
     align-items: center;
   }
   
@@ -296,7 +299,7 @@
   }
 
   .right-panel {
-    margin-top: 20px;
+    margin-top: 20px;   
   }
 }
 
@@ -306,6 +309,8 @@
     flex-direction: column;
     align-items: flex-start;
     padding: 10px;
+    width: 100%;
+    gap: 20px
   }
 
   .navbar nav ul {
@@ -313,7 +318,10 @@
     width: 100%;
     gap: 10px;
   }
-
+  .Mobile-tokens{
+    text-align: center;
+    justify-content: space-between;
+  }
   .search-container {
     width: 100%;
     flex-direction: column;
@@ -334,14 +342,12 @@
     flex: none;
   }
 
-  .welcome-container {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
   .profile-image {
     width: 60px;
     height: 60px;
+  }
+  .question-card{
+    padding-top: 50px;
   }
 
   .tags span {
@@ -352,7 +358,6 @@
   .actions {
     justify-content: flex-start;
     flex-wrap: wrap;
-    gap: 10px;
   }
 
   .actions a button,
