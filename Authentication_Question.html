@@ -6,142 +6,179 @@
     <title>OSKA Support - Authentication Question</title>
 
     <link rel="stylesheet" href="assets/fontawesome/css/all.css"> 
-    <link rel="stylesheet" href="assets/bootstrap-5.3.6-d/bootstrap.min.css">
-    <script src="js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="assets/bootstrap-5.3.6-d/css/bootstrap.min.css">
+    <script src="assets/bootstrap-5.3.6-d/js/bootstrap.bundle.min.js"></script>
 
     <link rel="stylesheet" href="Authentication_Question_style.css">
 </head>
 <body>
-    <div>
-        <header class="navbar">
-            <div class="logo"><a href="index.html">OSKA support</a></div>
-            <nav>
-              <ul>
-                <li>Categories</li>
-                <li>Bounty</li>
-                <a href="taskandproject.html"><li>Task/Project</li></a>
-              </ul>
-            </nav>
-            <div class="search-container">
-              <div class="search-box">
-                <i class="fa fa-search"></i>
-                <input type="text" placeholder="Search..." />
-              </div>
-              <div class="Mobile-tokens">
-              <div class="tokens">2,500 Tokens</div>
-              <div class="profile-icon">
-                <img src="img/profile-icon.png" alt="profile-icon">
-              </div>
-              </div>
-            </div>    
-          </header>
-    </div>
-    <main class="container">
-        <section class="main-content">
-          <div class="question-card">
-            <div class="tags">
-                <div class="user-info">
-                    <div class="tag"><span>JavaScript</span><span>React</span></div>
-                </div>
-                <div class="bounty-hours">
-                  <span><i class="fa fa-bookmark"></i></span>
-                  <span><i class="fa fa-share"></i></span>
-                </div>
-            </div>
-            <h1 class="Question">How to implement authentication in Next.js 13 with App Router?</h1>  
-            <p>I'm trying to implement authentication in my Next.js 13 application using the new App Router.I've tried several approaches but none seem 
-                to work properly.Looking for a detailed solution...
-            </p>
-            <div class="question-meta">
-              <div class="user-info">
-                <img src="img/1.png" alt="John Doe">
-               <div><span><b>John Doe </b></span><br><span style="color: #9d9d9d;">Posted on Jan 15, 2025</span></div>
-              </div>
-              <div class="bounty-entry">
-              <div class="bounty-center">
-                <span>500</span><br> <span style="color: #9d9d9d;">Tokens Bounty</span>
-                </div>
-                <div class="bounty-hours">
-                <span>48h</span><br><span style="color: #9d9d9d;"> Remaining</span>
-              </div>
-              </div>
-            </div>
-          </div>
-    
-          <div class="answers">
-            <h3>2 Answers</h3>
-            <hr>
-            <div class="answer-card">
-                <div class="vote-section">
-                    <i class="fa fa-angle-up"></i>
-                    <h2 class="vote">42</h2>
-                    <i class="fa fa-angle-down"></i>
-                  </div>
-              <div class="answer-content">
-                <div class="user-info">
-                    <img src="img/2.png" alt="image1">
-                    <div><span><b>Alice Smith</b></span><br><span>Answered  Jan 16, 2025</span></div>
-                </div>
-                <div class="detailed">
-                    <p>Here's a detailed solution using Next-Auth...</p>
-                  </div>
-                  <div class="comments-box">
-                  <p>comments(3)</p>
-                <div class="user-details">
-                    <img src="img/1.png" alt="image comments">
-                <div class="comments">
-                    <div><span><b>Bob wilson</b></span><br><span>Thanks, this helped!</span></div>
-                </div>
-                </div>
-                </div>
-              </div>
-            </div>
-          </div>
-    
-          <div class="your-answer">
-            <h3>Your Answer</h3>
-            <div class="editor-toolbar">
-              <button><i class="fa fa-bold"></i></button>
-              <button><i class="fa fa-italic"></i></button>
-              <button><i class="fa fa-link"></i></button>
-              <button><i class="fa fa-less-than"></i><i class="fa fa-slash"></i><i class="fa fa-greater-than"></i></button> 
-            </div>
-            <textarea placeholder="Write your answer here..."></textarea>
-          
-          <div class="answer-footer">
-            <span class="attachment"><i class="fa fa-paperclip"></i></i>  Add Attachment</span>
-            <button class="submit-btn">Submit Answer</button>
-          </div> 
+  <div class="container-flude">
+    <header class="navbar text-light py-3 d-flex flex-wrap align-items-center justify-content-between">
+      <div class="logo fs-4 fw-bold"><a href="index.html" class="nav-link text-light p-0">OSKA support</a></div>
+      <nav>
+        <ul class="nav gap-3 mb-0">
+          <li class="nav-item">Categories</li>
+          <li class="nav-item">Bounty</li>
+          <li class="nav-item overlay"><a href="taskandproject.html" class="nav-link text-light p-0">Task/Project</a></li>
+        </ul>
+      </nav>
+      <div class="search-container d-flex gap-3">
+        <div class="search-box position-relative">
+          <i class="fa fa-search position-absolute top-50 start-0 translate-middle-y ps-2"></i>
+          <input type="text" placeholder="Search..." class="form-control ps-5" />
         </div>
-        </section>
-    
-        <aside class="sidebar">
-          <div class="top-hunters">
-            <h3>Top Bounty Hunters</h3>
-            <ul>
-              <li><div class="user-infos">
-                <img src="img/2.png" alt="John Doe"><b>Alice Smith</b>   <span style="text-align: right;">2,500 tokens</span></div></li>
-              <li><div class="user-infos">
-                <img src="img/1.png" alt="John Doe"><b>Bob Wilson</b>  <span>1,800 tokens</span></div></li>
-            </ul>
+        <div class="Mobile-tokens d-flex align-items-center gap-3">
+          <div class="tokens fw-bold text-nowrap">2,500 Tokens</div>
+          <div class="profile-icon">
+            <img src="img/profile-icon.png" alt="profile-icon" class="rounded-circle " width="40" height="40"/>
           </div>
-    
-          <div class="related-questions">
-            <h3>Related Questions</h3>
-            <ul><div class="best-react">
-              <li>Authentication best practices in React</li>
-              <li class="days">5 answers . 2 days ago</li></div>
-              <div class="best-react"><li>JWT vs Session Authentication</li>
-              <li class="days">3 answers . 1 week ago</li></div>
-            </ul>
+        </div>
+      </div>
+    </header>
+
+<main class="container py-4">
+  <div class="row">
+    <!-- Main Content -->
+    <section class="col-lg-8 mb-4 bg-light p-3 rounded-3">
+      <div class="card mb-4 shadow-sm">
+        <div class="card-body">
+          <div class="d-flex justify-content-between align-items-center mb-2">
+            <div>
+              <span class="badge bg-light text-dark me-2">JavaScript</span>
+              <span class="badge bg-light text-dark">React</span>
+            </div>
+            <div>
+              <button type="button" class="btn  p-0 me-2" title="Bookmark"><i class="fa fa-bookmark"></i></button>
+              <button type="button" class="btn  p-0" title="Share"><i class="fa fa-share"></i></button>
+            </div>
           </div>
-    
-          <div class="buy-tokens">
-            <h3>Earn More Tokens</h3>
-            <p>Purchase tokens to post bounties and reward helpful answers</p>
-            <button>Buy Tokens</button>
+          <h1 class="h4 mb-3">How to implement authentication in Next.js 13 with App Router?</h1>
+          <p>I'm trying to implement authentication in my Next.js 13 application using the new App Router. I've tried several approaches but none seem to work properly. Looking for a detailed solution...</p>
+          <div class="d-flex justify-content-between align-items-center bg-light rounded p-3 mt-4">
+
+            <div class="d-flex align-items-center">
+              <img src="img/1.png" alt="John Doe" class="rounded-circle me-3" style="width:40px; height:40px; object-fit:cover;">
+              <div>
+                <strong>John Doe</strong><br>
+                <small class="text-muted">Posted on Jan 15, 2025</small>
+              </div>
+            </div>
+          
+            <div class="text-center fw-semibold">
+              <div>500</div>
+              <small class="text-muted">Tokens Bounty</small>
+            </div>
+          
+           
+            <div class="text-center fw-semibold">
+              <div>48h</div>
+              <small class="text-muted">Remaining</small>
+            </div>
           </div>
-        </aside>
-      </main>
+          
+        </div>
+      </div>
+
+      <div class="answers">
+        <h3 class="mb-3 ps-3">2 Answers</h3>
+        <hr>
+        <div class="card mb-4 shadow-sm">
+          <div class="card-body d-flex gap-3">
+            <div class="d-flex flex-column align-items-center pe-3 border-end">
+              <button type="button" class="btn p-0"><i class="fa fa-angle-up fa-lg"></i></button>
+              <h2 class="mb-0">42</h2>
+              <button type="button" class="btn p-0"><i class="fa fa-angle-down fa-lg"></i></button>
+            </div>
+            <div class="flex-grow-1">
+              <div class="d-flex align-items-center mb-2">
+                <img src="img/2.png" alt="Alice Smith" class="rounded-circle me-3" style="width:40px; height:40px; object-fit:cover;">
+                <div>
+                  <strong>Alice Smith</strong><br>
+                  <small>Answered Jan 16, 2025</small>
+                </div>
+              </div>
+              <div class="ps-3 border-start mb-3 text-secondary">
+                <p>Here's a detailed solution using Next-Auth...</p>
+              </div>
+              <div class="bg-light p-3 rounded">
+                <p class="mb-2">comments(3)</p>
+                <div class="d-flex align-items-center">
+                  <img src="img/1.png" alt="Bob wilson" class="rounded-circle me-3" style="width:40px; height:40px; object-fit:cover;">
+                  <div>
+                    <strong>Bob wilson</strong><br>
+                    <small>Thanks, this helped!</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="your-answer card shadow-sm">
+        <div class="card-body">
+          <h3>Your Answer</h3>
+          <div class="d-flex gap-2 mb-3 bg-light rounded p-2">
+            <button type="button" class="btn btn-outline-secondary btn-sm" title="Bold"><i class="fa fa-bold"></i></button>
+            <button type="button" class="btn btn-outline-secondary btn-sm" title="Italic"><i class="fa fa-italic"></i></button>
+            <button type="button" class="btn btn-outline-secondary btn-sm" title="Link"><i class="fa fa-link"></i></button>
+            <button type="button" class="btn btn-outline-secondary btn-sm" title="Code"><i class="fa fa-less-than"></i><i class="fa fa-slash"></i><i class="fa fa-greater-than"></i></button>
+          </div>
+          <textarea class="form-control mb-3" placeholder="Write your answer here..." rows="5"></textarea>
+          <div class="d-flex justify-content-between align-items-center">
+            <span class="btn btn-outline-secondary btn-sm d-flex align-items-center gap-1"><i class="fa fa-paperclip"></i> Add Attachment</span>
+            <button class="btn btn-primary">Submit Answer</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sidebar -->
+    <aside class="col-lg-4">
+      <div class="card mb-4 shadow-sm p-3">
+        <h3>Top Bounty Hunters</h3>
+        <ul class="list-unstyled">
+          <li class="d-flex justify-content-between align-items-center mb-2">
+            <div class="d-flex align-items-center gap-2">
+              <img src="img/2.png" alt="Alice Smith" class="rounded-circle" style="width:40px; height:40px; object-fit:cover;">
+              <strong>Alice Smith</strong>
+            </div>
+            <span class="text-end">2,500 tokens</span>
+          </li>
+          <li class="d-flex justify-content-between align-items-center mb-2">
+            <div class="d-flex align-items-center gap-2">
+              <img src="img/1.png" alt="Bob Wilson" class="rounded-circle" style="width:40px; height:40px; object-fit:cover;">
+              <strong>Bob Wilson</strong>
+            </div>
+            <span class="text-end">1,800 tokens</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="card mb-4 shadow-sm p-3">
+        <h3>Related Questions</h3>
+        <ul class="list-unstyled">
+          <li class="bg-light rounded p-2 mb-2">
+            Authentication best practices in React
+            <div class="text-muted small">5 answers · 2 days ago</div>
+          </li>
+          <li class="bg-light rounded p-2">
+            JWT vs Session Authentication
+            <div class="text-muted small">3 answers · 1 week ago</div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="card shadow-sm p-3 ">
+        <h3>Earn More Tokens</h3>
+        <p>Purchase tokens to post bounties and reward helpful answers</p>
+        <button class="btn btn-primary w-100">Buy Tokens</button>
+      </div>
+    </aside>
+  </div>
+</main>
+
+
+    </div>
 </body>
 </html>

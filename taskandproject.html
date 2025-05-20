@@ -5,160 +5,168 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title >OSKA Support</title>
 
-  <link rel="stylesheet" href="assets/fontawesome/css/all.css"> 
-  <link rel="stylesheet" href="assets/bootstrap-5.3.6-d/bootstrap.min.css">
-  <script src="js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="assets/fontawesome/css/all.css">
+  <link rel="stylesheet" href="assets/bootstrap-5.3.6-d/css/bootstrap.min.css">
+  <script src="assets/bootstrap-5.3.6-d/js/bootstrap.bundle.min.js"></script>
 
   <link rel="stylesheet" href="taskandproject.css"/>
 </head>
 <body>
-  <div>
-    <header class="navbar">
-      <div class="logo"><a href="index.html">OSKA support</a></div>
+  <div class="container-flude">
+    <header class="navbar text-light py-3 d-flex flex-wrap align-items-center justify-content-between">
+      <div class="logo fs-4 fw-bold"><a href="index.html" class="nav-link text-light p-0">OSKA support</a></div>
       <nav>
-        <ul>
-          <li>Categories</li>
-          <li>Bounty</li>
-          <a href="taskandproject.html"><li>Task/Project</li></a>
+        <ul class="nav gap-3 mb-0">
+          <li class="nav-item">Categories</li>
+          <li class="nav-item">Bounty</li>
+          <li class="nav-item overlay">Task/Project</li>
         </ul>
       </nav>
-      <div class="search-container">
-        <div class="search-box">
-          <i class="fa fa-search"></i>
-          <input type="text" placeholder="Search..." />
+      <div class="search-container d-flex gap-3">
+        <div class="search-box position-relative">
+          <i class="fa fa-search position-absolute top-50 start-0 translate-middle-y ps-2"></i>
+          <input type="text" placeholder="Search..." class="form-control ps-5" />
         </div>
-        <div class="Mobile-tokens">
-        <div class="tokens">2,500 Tokens</div>
-        <div class="profile-icon">
-          <img src="img/profile-icon.png" alt="profile-icon">
+        <div class="Mobile-tokens d-flex align-items-center gap-3">
+          <div class="tokens fw-bold text-nowrap">2,500 Tokens</div>
+          <div class="profile-icon">
+            <img src="img/profile-icon.png" alt="profile-icon" class="rounded-circle " width="40" height="40"/>
+          </div>
         </div>
-        </div>
-      </div>    
+      </div>
     </header>
 
-    <main class="main-content">
-      <div class="left-panel">
-        <div class="welcome-container">
-            <div class="welcome-box">
-              <h1 style="font-size:30px;">Task / Projects</h1>
-              <small>Task And Projects that</small>
-            </div>
-          </div>
-          
-        <!-- Question Card 1 -->
-        <div class="question-card">
-          <div class="card-tokens"><i class="fa fa-database"> </i> 500 tokens</div>
-          <h3>How to implement WebSocket security in Node.js?</h3>
-          <div class="tags">
-            <span>WebSocket</span><span>Security</span><span>Node.js</span>
-          </div>
-          <div class="meta-action">
-          <div class="meta">
-            <span> <i class="fa fa-clock"></i> 2d 14h left</span>
-            <span><i class="fa fa-commenting"></i> 5 answers</span>
-          </div>
-          <div class="actions">
-            <a href="Authentication_Question.html"><button> Answer Now</button></a>
-          </div>
+    <main class="main-content row mt-2 g-1">
+      <section class="left-panel col-lg-8 col-md-12">
+        <div class="welcome-container d-flex align-items-center bg-white p-1 rounded-3 gap-3 mb-3">
+          <div class="welcome-box ms-2">
+            <p class="mb-1  fs-4 fw-bold">Task / Project</p>
+            <small class="text-muted">Tasks And Projects That</small>
           </div>
         </div>
 
-        <!-- Question Card 2 -->
-        <div class="question-card">
-          <div class="card-tokens"><i class="fa fa-database"></i> 300 tokens</div>
-          <h3>Best practices for React Native performance optimization?</h3>
-          <div class="tags">
-            <span>React Native</span><span>Performance</span><span>Mobile</span>
+        <!-- Question Cards -->
+        <div class="question-card bg-white p-4 rounded-3 mb-4 position-relative shadow-sm">
+          <div class="card-tokens position-absolute top-0 end-0 bg-light text-dark px-3 py-1 rounded-bottom-start fw-bold">
+            <i class="fa fa-database"></i> 500 tokens
           </div>
-          <div class="meta-action">
-          <div class="meta">
-            <span> <i class="fa fa-clock"></i> 5d 8h left</span>
-            <span><i class="fa fa-commenting"></i> 3 answers</span>
+          <h3>How to implement WebSocket security in Node.js?</h3>
+          <div class="tags mb-3">
+            <span class="badge me-1">WebSocket</span><span class="badge me-1">Security</span><span class="badge">Node.js</span>
           </div>
-          <div class="actions">
-            <a href="Authentication_Question.html"><button> Answer Now</button></a>
-          </div>
-          </div>
-        </div>
-        <!-- Question Card 3 -->
-        <div class="question-card">
-            <div class="card-tokens"><i class="fa fa-database"></i> 500 tokens</div>
-            <h3>How to implement WebSocket security in Node.js?</h3>
-            <div class="tags">
-              <span>WebSocket</span><span>Security</span><span>Node.js</span>
-            </div>
-            <div class="meta-action">
-            <div class="meta">
-              <span> <i class="fa fa-clock"></i>2d 14h left</span>
+          <div class="meta-action d-flex justify-content-between">
+            <div>
+              <span class="me-3"><i class="fa fa-clock"></i> 2d 14h left</span>
               <span><i class="fa fa-commenting"></i> 5 answers</span>
             </div>
             <div class="actions">
-              <a href="Authentication_Question.html"><button> Answer Now</button></a>
+              <a href="Authentication_Question.html" class="btn btn-primary btn-sm">Answer Now</a>
             </div>
-            </div>
-          </div>
-  
-          <!-- Question Card 4 -->
-          <div class="question-card">
-            <div class="card-tokens"><i class="fa fa-database"></i> 300 tokens</div>
-            <h3>Best practices for React Native performance optimization?</h3>
-            <div class="tags">
-              <span>React Native</span><span>Performance</span><span>Mobile</span>
-            </div>
-            <div class="meta-action">
-            <div class="meta">
-              <span> <i class="fa fa-clock"></i> 5d 8h left</span>
-              <span><i class="fa fa-commenting"></i> 3 answers</span>
-            </div>
-            <div class="actions">
-              <a href="Authentication_Question.html"><button> Answer Now</button></a>
-            </div>
-            </div>
-          </div>
-      </div>
-
-      <aside class="right-panel">
-        <button class="post" >Post A Task</button>
-
-        <div class="card">
-            <h4>Top Bounty Hunters</h4>
-          
-            <div class="bounty-entry">
-              <img src="img/1.png" alt="#1_image" class="bounty-rank-image">
-              <div class="bounty-info">
-                <div class="bounty-name-rank">
-                  <span class="bounty-name">Alex Johnson</span>
-                  <span class="bounty-rank">#1</span>
-                </div>
-                <p class="bounty-tokens">2,500 tokens earned</p>
-              </div>
-            </div>
-          
-            <div class="bounty-entry">
-              <img src="img/2.png" alt="#2_image" class="bounty-rank-image">
-              <div class="bounty-info">
-                <div class="bounty-name-rank">
-                  <span class="bounty-name">Sarah Smith</span>
-                  <span class="bounty-rank">#2</span>
-                </div>
-                <p class="bounty-tokens">1,800 tokens earned</p>
-              </div>
-            </div>
-          </div>
-          
-
-        <div class="card">
-          <h4>Watched Topics</h4>
-          <div class="tags">
-            <span>React Native</span><span>Performance</span><span>Mobile</span><br/>
-            <span>ITSM</span><span>ITOM</span><span>Service Now</span>
           </div>
         </div>
 
-        <div class="card">
+        <div class="question-card bg-white p-4 rounded-3 mb-4 position-relative shadow-sm">
+          <div class="card-tokens position-absolute top-0 end-0 bg-light text-dark px-3 py-1 rounded-bottom-start fw-bold">
+            <i class="fa fa-database"></i> 300 tokens
+          </div>
+          <h3>Best practices for React Native performance optimization?</h3>
+          <div class="tags mb-3">
+            <span class="badge me-1">React Native</span><span class="badge me-1">Performance</span><span class="badge">Mobile</span>
+          </div>
+          <div class="meta-action d-flex justify-content-between">
+            <div>
+              <span class="me-3"><i class="fa fa-clock"></i> 5d 8h left</span>
+              <span><i class="fa fa-commenting"></i> 3 answers</span>
+            </div>
+            <div class="actions">
+              <a href="Authentication_Question.html" class="btn btn-primary btn-sm">Answer Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="question-card bg-white p-4 rounded-3 mb-4 position-relative shadow-sm">
+          <div class="card-tokens position-absolute top-0 end-0 bg-light text-dark px-3 py-1 rounded-bottom-start fw-bold">
+            <i class="fa fa-database"></i> 500 tokens
+          </div>
+          <h3>How to implement WebSocket security in Node.js?</h3>
+          <div class="tags mb-3">
+            <span class="badge me-1">WebSocket</span><span class="badge me-1">Security</span><span class="badge ">Node.js</span>
+          </div>
+          <div class="meta-action d-flex justify-content-between">
+            <div>
+              <span class="me-3"><i class="fa fa-clock"></i> 2d 14h left</span>
+              <span><i class="fa fa-commenting"></i> 5 answers</span>
+            </div>
+            <div class="actions">
+              <a href="Authentication_Question.html" class="btn btn-primary btn-sm">Answer Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="question-card bg-white p-4 rounded-3 mb-4 position-relative shadow-sm">
+          <div class="card-tokens position-absolute top-0 end-0 bg-light text-dark px-3 py-1 rounded-bottom-start fw-bold">
+            <i class="fa fa-database"></i> 300 tokens
+          </div>
+          <h3>Best practices for React Native performance optimization?</h3>
+          <div class="tags mb-3">
+            <span class="badge me-1">React Native</span><span class="badge me-1">Performance</span><span class="badge">Mobile</span>
+          </div>
+          <div class="meta-action d-flex justify-content-between">
+            <div>
+              <span class="me-3"><i class="fa fa-clock"></i> 5d 8h left</span>
+              <span><i class="fa fa-commenting"></i> 3 answers</span>
+            </div>
+            <div class="actions">
+              <a href="Authentication_Question.html" class="btn btn-primary btn-sm">Answer Now</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <aside class="right-panel col-lg-4 col-md-12 d-flex flex-column gap-4">
+        <button class="post btn fw-bold py-2 rounded-3 mt-3">Post A Task</button>
+
+        <div class="card p-3 rounded-3 shadow-sm">
+          <h4>Top Bounty Hunters</h4>
+          <div class="bounty-entry d-flex align-items-center mb-3">
+            <img src="img/1.png" alt="#1_image" class="bounty-rank-image rounded-circle me-3" width="40" height="40" />
+            <div class="bounty-info flex-grow-1">
+              <div class="bounty-name-rank d-flex justify-content-between align-items-center">
+                <span class="bounty-name fw-bold">Alex Johnson</span>
+                <span class="bounty-rank fw-bold">#1</span>
+              </div>
+              <p class="bounty-tokens text-muted mb-0">2,500 tokens earned</p>
+            </div>
+          </div>
+
+          <div class="bounty-entry d-flex align-items-center mb-3">
+            <img src="img/2.png" alt="#2_image" class="bounty-rank-image rounded-circle me-3" width="40" height="40" />
+            <div class="bounty-info flex-grow-1">
+              <div class="bounty-name-rank d-flex justify-content-between align-items-center">
+                <span class="bounty-name fw-bold">Sarah Smith</span>
+                <span class="bounty-rank fw-bold">#2</span>
+              </div>
+              <p class="bounty-tokens text-muted mb-0">1,800 tokens earned</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card p-3 rounded-3 shadow-sm">
+          <h4>Watched Topics</h4>
+          <div class="tags">
+            <span class="badge me-1">React Native</span>
+            <span class="badge me-1">Performance</span>
+            <span class="badge me-1">Mobile</span><br />
+            <span class="badge me-1">ITSM</span>
+            <span class="badge me-1">ITOM</span>
+            <span class="badge">Service Now</span>
+          </div>
+        </div>
+
+        <div class="card p-3 rounded-3 shadow-sm">
           <h4>Need More Tokens?</h4>
-          <button class="purchase-btn"><i class="fa fa-database"></i> Purchase Tokens</button>
-          <small>Get more tokens to post your questions</small>
+          <button class="purchase-btn btn  w-100 py-2 rounded-3"><i class="fa fa-database"></i> Purchase Tokens</button>
+          <small class="text-muted">Get more tokens to post your questions</small>
         </div>
       </aside>
     </main>
