@@ -25,7 +25,10 @@
     color: rgb(56,56,56);
     background-color: #ffffff;
   }
- 
+
+  body{
+    background-color: #fafafa;
+  }
   .profile-icon img {
     object-fit: cover;
     cursor: pointer;
