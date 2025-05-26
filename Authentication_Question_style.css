@@ -9,22 +9,8 @@
   body{
     background-color: #e3e8f0;
   }
-  
-  .navbar {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    background: #1d3b91;
-    color: white;
-    padding: 15px 20px;
-  }
-  .search-box i {
-    position: absolute;
-    left: 8px;
-    top: 50%;
-    color: rgb(56,56,56);
-    transform: translateY(-50%);
+  .navbar{
+    background-color: #1e3a8a;
   }
   .profile-icon img {
     object-fit: cover;
@@ -120,109 +106,96 @@ textarea.form-control {
    ================================ */
 
 /* Tablet View (768px - 1024px) */
-@media (max-width: 1024px) {
-  .container {
-    flex-direction: column;
-    padding: 1rem;
-  }
 
+/* Medium Devices (Tablets) */
+@media (max-width: 992px) {
   .main-content {
-    margin-right: 0;
-    margin-bottom: 1rem;
+    margin-left: 20px;
+    margin-right: 20px;
+    flex-direction: column;
   }
-  .sidebar {
-    padding-top: 0;
-  }
-
-  .search-container {
-    flex-wrap: wrap;
-    gap: 0.5rem;
-  }
-
+  
   .navbar nav ul {
+    flex-wrap: wrap;
     gap: 10px;
   }
-
-
-  .answer-footer {
-    flex-direction: column;
-    align-items: flex-start;
+  
+  .search-container {
+    flex-wrap: wrap;
+    gap: 10px;
   }
-
-  .attachment,
-  .submit-btn {
-    width: 100%;
-    margin: 0.5rem 0;
+  
+  .right-panel {
+    margin-top: 20px;   
   }
-}
-
-/* Mobile View (below 768px) */
-@media (max-width: 767px) {
+  }
+  
+  /* Small Devices (Phones, iOS/Android) */
+  @media (max-width: 600px) {
   .navbar {
+   
     align-items: center;
-    gap: 1rem;
+    gap: 20px
   }
-
-
+  
+  .navbar nav ul {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+  }
+  .Mobile-tokens{
+    text-align: center;
+    justify-content: space-between;
+  }
   .search-container {
     width: 100%;
     flex-direction: column;
     align-items: stretch;
+    margin-top: 10px;
   }
   
   .search-box input {
     width: 100%;
   }
-
-  .container {
-    flex-direction: column;
-    padding: 1rem;
-  }
-
+  
   .main-content {
-    margin-right: 0;
-  }
-
-  .sidebar {
-    padding-top: 0;
-  }
-
-  .navbar nav ul {
+    margin: 10px;
     flex-direction: column;
-    gap: 10px;
-  }
-
-  .Mobile-tokens {
-    justify-content: space-between;
-    width: 100%;
   }
   
-  .answer-card {
-    flex-direction: row;
-    padding: 1rem;
+  .left-panel, .right-panel {
+    width: 100%;
+    flex: none;
   }
-
-  .comments-box,
-  .your-answer {
-    padding: 1rem;
+  
+  .profile-image {
+    width: 60px;
+    height: 60px;
   }
-
-  .editor-toolbar {
+  .question-card{
+    padding-top: 50px;
+  }
+  .question-card, h3 {
+    margin-top: 20px;
+  }
+  .tags span {
+    padding: 6px 8px;
+  }
+  
+  .actions {
+    justify-content: flex-start;
     flex-wrap: wrap;
   }
-
-  .attachment,
-  .submit-btn {
+  
+  .actions a button,
+  .ask-question,
+  .purchase-btn {
     width: 100%;
-    margin: 0.5rem 0;
-  }
-  .question-meta {
-    flex-direction: column;
-    height: auto;
-  }
-  .bounty-entry{
-    justify-content: space-between;
-    gap: 100px;
+    text-align: center;
   }
   
-}
+  .question-card {
+    margin: 10px 0;
+  }
+  }
+  

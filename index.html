@@ -12,29 +12,34 @@
   <link rel="stylesheet" href="indexstyle.css"/>
 </head>
 <body>
-  <div class="container-flude">
-    <header class="navbar text-light py-3 d-flex flex-wrap align-items-center justify-content-between">
-      <div class="logo fs-4 fw-bold">OSKA support</div>
-      <nav>
-        <ul class="nav gap-3 mb-0">
-          <li class="nav-item">Categories</li>
-          <li class="nav-item">Bounty</li>
-          <li class="nav-item overlay"><a href="taskandproject.html" class="nav-link text-light p-0">Task/Project</a></li>
+  <nav class="navbar navbar-expand-lg navbar-dark  py-3">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold fs-4" href="index.html">OSKA support</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav mb-0">
+          <li class="nav-item"><a class="nav-link" href="#">Categories</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Bounty</a></li>
+          <li class="nav-item"><a class="nav-link" href="taskandproject.html">Task/Project</a></li>
         </ul>
-      </nav>
-      <div class="search-container d-flex gap-3">
-        <div class="search-box position-relative">
-          <i class="fa fa-search position-absolute top-50 start-0 translate-middle-y ps-2"></i>
-          <input type="text" placeholder="Search..." class="form-control ps-5" />
         </div>
-        <div class="Mobile-tokens d-flex align-items-center gap-3">
-          <div class="tokens fw-bold text-nowrap">2,500 Tokens</div>
-          <div class="profile-icon">
-            <img src="img/profile-icon.png" alt="profile-icon" class="rounded-circle " width="40" height="40"/>
+        <div class="search-container d-flex gap-3">
+            <div class="search-box position-relative">
+              <i class="fa fa-search position-absolute top-50 start-0 translate-middle-y ps-2"></i>
+              <input type="text" placeholder="Search..." class="form-control ps-5" />
+            </div>
+            <div class="Mobile-tokens d-flex align-items-center gap-3">
+              <div class="tokens fw-bold text-white">2,500 Tokens</div>
+              <div class="profile-icon">
+                <img src="img/profile-icon.png" alt="profile-icon" class="rounded-circle " width="40" height="40"/>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-    </header>
+    </div>
+  </nav>
+  
 
     <main class="main-content row mt-2 g-1">
       <section class="left-panel col-lg-8 col-md-12">
